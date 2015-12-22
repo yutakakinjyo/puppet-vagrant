@@ -1,3 +1,3 @@
-package { 'zsh':
+package { ['git','zsh']:
   ensure => installed,
 }
