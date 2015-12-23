@@ -69,9 +69,15 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get install -y apache2
   # SHELL
 
+  config.vm.provision "shell", inline: <<-SHELL
+    sudo puppet module install puppetlabs-apt
+  SHELL
+
+
   config.vm.provision "puppet" do |puppet|
     puppet.manifests_path = "manifests"
     puppet.manifest_file = "default.pp"
+    puppet.options = "--modulepath=/etc/puppet/modules"
   end
   
 end
