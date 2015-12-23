@@ -13,4 +13,12 @@ end
 
 need config for puppet.
 
+**tree**
 
+```
+.
+├── README.md
+├── Vagrantfile
+├── manifests
+│   └── default.pp
+```
