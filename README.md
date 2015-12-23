@@ -1,6 +1,6 @@
 # Practice of puppet on Vagrant
 
-## Configreation
+## Configuration
 
 at Vagrantfile
 
